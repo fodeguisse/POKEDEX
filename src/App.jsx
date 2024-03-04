@@ -1,10 +1,11 @@
+import PresentationPokedex from "./components/PresentationPokedex/PresentationPokedex"
 
 
 function App() {
 
   return (
     <>
-      <h1>POKEDEX</h1>
+      <PresentationPokedex/>
     </>
   )
 }
