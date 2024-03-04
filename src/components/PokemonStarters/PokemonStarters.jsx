@@ -1,29 +1,15 @@
-import generations from "./starters";
-
-
+import PokemonCard from "../PokemonCard/PokemonCard";
+import "./PokemonStarters.css"
 
 function PokemonStarters(){
   
     return(
         <>
-            <h2>Starters Pokémon</h2>
-            <div key={generations}>{generations.map((oneGeneration) => 
-                <div key={oneGeneration}>
-                    <h3 key={oneGeneration.generation}>{oneGeneration.generation}</h3>
-                    <div key={oneGeneration.pokemons}>
-                        {oneGeneration.pokemons.map((onePokemon) =>
-                        <div key={onePokemon.name} > 
-                            <p>{onePokemon.name}</p>
-                            <img key={onePokemon.image} src={onePokemon.image}/>
-                        </div>
-                        
-                        )}
-                    </div>
-                </div>
-                
-                
-                )}
+            <div>
+                <h2>Starters Pokémon</h2>
+                <PokemonCard/>
             </div>
+            
 
         </>
     )
